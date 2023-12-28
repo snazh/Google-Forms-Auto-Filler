@@ -13,7 +13,7 @@ if __name__ == '__main__':
         random.choices(('i56', 'i59', 'i62', 'i25'), weights=(25, 25, 25, 25), k=1),
         random.choices(('i72', 'i75', 'i78', 'i81', 'i84'), weights=(20, 20, 20, 20, 20), k=1),
         random.choices(('i91', '94', 'i97', 'i100'), weights=(25, 25, 25, 25), k=1),
-        random.choices(('i107', 'i110', 'i113', 'i117'), weights=(25, 25, 25, 25), k=1)
+        random.choices(('i107', 'i110', 'i113', 'i116'), weights=(25, 25, 25, 25), k=1)
     )
 
     link = 'https://docs.google.com/forms/d/e/1FAIpQLSfd1iq02LJgHQ6iCO0Wb5VDIMtsVxGXYrkf6ixmJaWRzx9O-A/viewform'
@@ -25,7 +25,7 @@ if __name__ == '__main__':
         for index, el in enumerate(answers, 0):
             browser.find_element(By.ID, *el).click()
         browser.find_element(By.XPATH, '//*[@id="mG61Hd"]/div[2]/div/div[3]/div[1]/div[1]/div').click()
-        time.sleep(0.39)
+        time.sleep(0.45)
         browser.find_element(By.XPATH, '/html/body/div[1]/div[2]/div[1]/div/div[4]/a').click()
 
     end = timer()
